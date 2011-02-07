@@ -24,10 +24,12 @@ This table must yield exactly two columns named `name` and `value`. A typical cr
 
 #### Content
 
-The metadata table is used as a key/value store for settings. Two keys are required:
+The metadata table is used as a key/value store for settings. Four keys are required:
 
 * `name`: The plain-english name of the tileset.
 * `type`: `overlay` or `baselayer`
+* `version`: The version of the tileset, as a plain number.
+* `description`: A description of the layer as plain text.
 
 ### Tiles
 
