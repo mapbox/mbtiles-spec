@@ -22,4 +22,4 @@ MBTiles is a specification for storing tiled map data in  [SQLite](http://sqlite
 
 * Tom MacWright (tmcw)
 * Will White (willwhite)
-* Justin Miller (icanus)
+* Justin Miller (incanus)
