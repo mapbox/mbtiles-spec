@@ -37,7 +37,7 @@ The keys are stored in an array named `keys` at the root level. The index of eac
 Retrieving a key from a coordinate works as follows (`json` is the root level object, `x` and `y` are the coordinates, starting from top left at 0, and `size` is the number of entries in the `grid` key):
 
 * `var factor = 256 / size, row = y / factor, col = x / factor`
-* `var id = char.charCodeAt(json.grid[row][col]);` is the character that contains the encoded ID.
+* `var id = json.grid[row].charCodeAt(col);` is the character that contains the encoded ID.
 * Decode the id as described in *"Encoding IDs"*.
 * `var key = json.keys[id];` retrieves the ID associated with the coordinate.
 
