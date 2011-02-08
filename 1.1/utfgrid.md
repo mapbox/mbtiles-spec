@@ -179,3 +179,4 @@ All divisions are integer divisions.
         "keys": ["", "US", "DE", "AT", "CA", "FR", "ES", "GB"]
     }
 
+When minified and gzipped, the resulting file will be 990 bytes.
