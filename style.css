@@ -1,0 +1,71 @@
+body {
+  background:url('paper.jpg');
+  font:13px/20px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color:#444;
+  width:475px;
+  margin:auto;
+  }
+
+h1, h2 {
+  font-weight:300;
+  }
+
+p, ul, ol { margin:0 0 10px;}
+
+a {
+  color: #486078;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+ul li {
+  display: list-item;
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
+  list-style: disc;
+  }
+
+h1, h2, h3, h4 {
+  font-size:26px;
+  margin:20px 0;
+  }
+
+h2 { font-size: 20px }
+
+h3 {
+  font-size: 14px;
+  margin-bottom:5px;
+  }
+
+tt,
+pre,
+code {
+  font:normal 12px/20px 'Andale Mono',Monaco,Consolas,'Lucida Console',monospace;
+  margin:0px;
+  padding:0px;
+  }
+
+pre,
+code {
+  color:#888;
+  background:#f8f8f8;
+  }
+
+pre {
+  padding:9px;
+  margin:10px 0px;
+  border:1px solid #eee;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  box-shadow:inset #eee 0px 1px 5px;
+  -moz-box-shadow:inset #eee 0px 1px 5px;
+  -webkit-box-shadow:inset #eee 0px 1px 5px;
+  }
+
+.content {
+  margin:30px;
+  padding:30px;
+  padding-top: 350px;
+  background:#fff url('mbtiles.png') no-repeat 50% 35px;
+  }

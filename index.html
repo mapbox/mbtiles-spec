@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>MBTiles Specification</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+
+<div class='content'>
+  <h1 class='page-title'>MBTiles Specification</h1>
+  <p>
+    MBTiles is a specification for storing tiled map data in SQLite databases
+    for immediate use and for transfer. The files are designed for portability
+    of thousands, hundreds of thousands, or even millions of standard map tile
+    images in a single file.
+  </p>
+  <p>
+    This makes it easy to manage and share map tiles.
+  </p>
+  <p>
+    Developers that want to learn more about MBTiles can
+    <a href="https://github.com/mapbox/mbtiles-spec">view the full specification</a>.
+  </p>
+
+  <h2>Features</h2>
+
+  <h3>Fast</h3>
+  <p>Transferring an MBTiles file is faster than transferring millions of tile
+    images when loading them onto USB stick, mobile device, or when
+    transferring over a network. The trade-off in database access versus
+    filesystem access when using MBTiles is, in our experience, negligible.</p>
+  <h3>Offline</h3>
+  <p>Because MBTiles files are self contained, they can used without an
+    Internet connection.</p>
+  <h3>Compatible</h3>
+  <p>Images are stored as blob data, so tiles can be read by most SQLite
+    clients.</p>
+
+  <h2>Example</h2>
+  <p>Download the <a href='http://mapbox-tilesets.s3.amazonaws.com/mbtiles/Haiti_Terrain_Grey.mbtiles.zip'>Haiti Terrain Grey tileset</a> and unzip it in your terminal using the following command.</p>
+  <pre><code>unzip Haiti_Terrian_Grey.mbtiles.zip</code></pre>
+  <p>Then, open the MBTiles file in the sqlite client.</p>
+  <pre><code>sqlite3 Haiti_Terrian_Grey.mbtiles</code></pre>
+  <p>Next, run this SQL statment.</p>
+  <pre><code>SELECT * FROM tiles WHERE zoom = 5;</code></pre>
+  <p>This displays a row for each tile on zoom level five.
+  <pre><code>5|8|17|????
+5|8|18|????
+5|9|17|????
+5|9|18|????
+5|10|17|????
+5|10|18|????</code></pre>
+  <p>The <code>????</code> charecters represents JPG images stored as blob data.</p>
+
+  <a href="https://github.com/mapbox/mbtiles-spec">View the full specification</a>.
+</div>
+
+
+</body>
+</html>
