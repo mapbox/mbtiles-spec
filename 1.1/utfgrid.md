@@ -43,6 +43,13 @@ Retrieving a key from a coordinate works as follows (`json` is the root level ob
 
 All divisions are integer divisions.
 
+## Mapping a key to data
+
+The JSON file may contain an optional `data` property at the root level. If it isn't present, the client looks up the obtained key in its internal data store. If the lookup key is not present, it queries the server with the missing keys. If the `data` property is present, but the key cannot be found, the client must behave as if there were no `data` property.
+
+An empty key signifies the unavailability of information for that pixel. No action may be taken to retrieve data for an empty (`""`) key.
+
+
 ## Example UTFGrid JSON file
 
     { "grid":
@@ -220,6 +227,4 @@ All divisions are integer divisions.
       }
     }
 
-The `data` key is optional. If it isn't present, the client looks up the obtained key in its internal data store. If the lookup key is not present, it queries the server with the missing keys.
-
-When minified and gzipped, the resulting file is 2071 bytes.
+When minified and gzipped, the resulting file is 2071 bytes with the key to data mapping and 1645 bytes without.
