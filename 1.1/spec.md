@@ -1,5 +1,10 @@
 # MBTiles 1.0
 
+# Sub-sections:
+
+* **UTFGrid**: storage of data used for interactivity
+* **Formatter**: presentation of interactive data
+
 ## Abstract
 
 MBTiles is a specification for storing tiled map data in  [SQLite](http://sqlite.org/) databases for immediate usage and for transfer. MBTiles files, known as **tilesets**, must implement the specification below to ensure compatibility with devices.
