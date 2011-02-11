@@ -16,3 +16,13 @@ Only a single formatter is permitted per tileset. The formatter function can be 
      }
 
 The `options` argument has one standardized property, `format`, which is expected to be a string, and all formatters must support two values, "teaser" and "full".
+
+### Example
+
+    function (options, data) {
+        if (options.format == 'teaser') {
+            return '<h1>' + data.NAME + '</h1>';
+        } else if (options.format == 'full') {
+            return '<h1>' + data.NAME + '</h1>' + data.AREA;
+        }
+    }
