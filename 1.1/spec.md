@@ -39,7 +39,7 @@ The metadata table is used as a key/value store for settings. Five keys are **re
 
 One row in `metadata` is **suggested** and, if provided, may enhance performance.
 
-* `bounds`: The maximum extent of the rendered map area. Bounds must define an area covered by all zoom levels, thus it will traditionally describe the bounds of the highest zoom level. The bounds are represented in `WGS:84` - latitude and longitude values, in the OpenLayers Bounds format - **left, bottom, right, top**. Example of the full earth: `-180.0,-85,180,85`.
+* `bounds`: The maximum extent of the rendered map area. Bounds must define an area covered by all zoom levels. The bounds are represented in `WGS:84` - latitude and longitude values, in the OpenLayers Bounds format - **left, bottom, right, top**. Example of the full earth: `-180.0,-85,180,85`.
 
 ### Tiles
 
