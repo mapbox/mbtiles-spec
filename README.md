@@ -13,6 +13,7 @@ MBTiles is a specification for storing tiled map data in  [SQLite](http://sqlite
 
 * `name='format'` row **required** in `metadata` table.
 * `name='bounds'` row suggested in `metadata` table.
+* optional UTFGrid-based interaction spec.
 
 # Implementations
 
