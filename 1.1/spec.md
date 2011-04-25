@@ -1,4 +1,4 @@
-# MBTiles 1.0
+# MBTiles 1.1
 
 # Sub-sections:
 
