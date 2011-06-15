@@ -42,9 +42,9 @@
 
   <h2>Example</h2>
   <p>Download the <a href='http://a.tiles.mapbox.com/mapbox/download/haiti-terrain-grey.mbtiles'>Haiti Terrain Grey tileset</a>. Then, open the MBTiles file in the sqlite client.</p>
-  <pre><code>sqlite3 Haiti_Terrian_Grey.mbtiles</code></pre>
+  <pre><code>sqlite3 haiti-terrian-grey.mbtiles</code></pre>
   <p>Next, run this SQL statment.</p>
-  <pre><code>SELECT * FROM tiles WHERE zoom = 5;</code></pre>
+  <pre><code>SELECT * FROM tiles WHERE zoom_level = 5;</code></pre>
   <p>This displays a row for each tile on zoom level five.
   <pre><code>5|8|17|????
 5|8|18|????
@@ -52,7 +52,7 @@
 5|9|18|????
 5|10|17|????
 5|10|18|????</code></pre>
-  <p>The <code>????</code> charecters represents JPG images stored as blob data.</p>
+  <p>The <code>????</code> charecters represents PNG images stored as blob data.</p>
 
   <a href="https://github.com/mapbox/mbtiles-spec">View the full specification</a>.
 </div>
