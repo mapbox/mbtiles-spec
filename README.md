@@ -4,10 +4,15 @@ MBTiles is a specification for storing tiled map data in  [SQLite](http://sqlite
 
 # Versions
 
-* [1.1](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/spec.md)
+* In-progress / unstable: [2.0](https://github.com/mapbox/mbtiles-spec/blob/master/2.0/spec.md)
+* **Stable**: [1.1](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/spec.md)
 * [1.0](https://github.com/mapbox/mbtiles-spec/blob/master/1.0/spec.md)
 
 # Changelog
+
+## 2.0
+
+* UTFGrid is updated to support composited layers.
 
 ## 1.1
 
