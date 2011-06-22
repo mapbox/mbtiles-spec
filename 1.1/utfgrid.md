@@ -228,3 +228,5 @@ An empty key signifies the unavailability of information for that pixel. No acti
     }
 
 When minified and gzipped, the resulting file is 2071 bytes with the key to data mapping and 1645 bytes without.
+
+To test implementations, [`demo.json`](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/demo.json) contains a grid that consists of 65501 different keys. This is the maximum possible in this version of UTFGrid. Implementors should check that obtaining a a coordinate should return the key `y * 256 + x` for all x/y, with the exception of y = 255 and x >= 222 and x <= 255 returning 65501 due to the maximum charcode allowed in JSON.
