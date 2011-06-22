@@ -10,7 +10,7 @@ UTFGrid uses JSON as a container format. It is exclusively geared towards square
 
 To achieve reasonable speed in browsers, we store information for a pixel in long strings, where each character's Unicode code point is the key for retrieving the information associated with that pixel. When we have less than 96 unique IDs, this means that the space taken up by storing each pixel separately is 256 * 256 = 64 KB. Gzipping the grid data typically reduces it to a size below 2K.
 
-By default, UTFGrid operates on a 2x2 grid. This means that the maximum information resolution for a 256x256 tile is 128x128. If each pixel had different information, we require a 14 bit wide ID (2^14 = 16384). However, most tiles won't have that many IDs; they'll typically have a couple of dozens IDs maximum. Therefore, we take advantage of UTF-8's variable length codepoint encoding: all ASCII characters are encoded as is, that means that the first 128 codepoints are encoded with their code number as a single byte. IDs with a number larger than that will get encoded as multiple bytes.
+By default, UTFGrid operates on a 2x2 grid. This means that the maximum information resolution for a 256x256 tile is 128x128. If each pixel had different information, we require a 14 bit wide ID (2^14 = 16384). However, most tiles won't have that many IDs; they'll typically have a couple of dozens IDs. Therefore, we take advantage of UTF-8's variable length codepoint encoding: all ASCII characters are encoded as is, that means that the first 94 codepoints are encoded with their code number as a single byte (codes `0x20`, `0x21`, `0x23`-`0x5B` and `0x5D`-`0x7F`). IDs with a number larger than that will get encoded as multiple bytes.
 
 ## Encoding IDs
 
@@ -229,7 +229,7 @@ An empty key signifies the unavailability of information for that pixel. No acti
 
 When minified and gzipped, the resulting file is 2071 bytes with the key to data mapping and 1645 bytes without.
 
-To test implementations, [`demo.json`](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/demo.json) contains a grid that consists of 65501 different keys. This is the maximum possible in this version of UTFGrid. Implementors should check that obtaining a a coordinate should return the key `y * 256 + x` for all x/y, with the exception of y = 255 and x >= 222 and x <= 255 returning 65501 due to the maximum charcode allowed in JSON.
+To test implementations, [`demo.json`](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/demo.json) contains a grid that consists of 65501 different keys. This is the maximum possible in this version of UTFGrid. Implementors should check that obtaining a a coordinate should return the key `y * 256 + x` for all x/y, with the exception of y = 255 and x >= 222 and x <= 255 returning 65501 due to the maximum codepoint allowed in JSON.
 
 A dummy code validation routine is given here:
 
