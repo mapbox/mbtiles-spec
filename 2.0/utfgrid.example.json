@@ -1,0 +1,1234 @@
+{
+    "grid": [
+        "       !!##################$$%%%%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "        !#####################'''&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "       !!#####################''&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "       !!##################'##'''&&'&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "       !!##################'''''''''&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "       !!####(((##))#######'''''''''&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "      ***##((((((#)))######''''''''''&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        " *    *****((((((#))))#####''''''''''&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+        "*!!!!!!!!!!((((((##)))#####''''''''''&&&&&&&&&&&&+&&&&,&&&,,,---",
+        "!!!!!!!!!!!((((((##)))##!##''''''''''''&&&&&&+++++&&&,,,,,,,----",
+        "!!!!!!!!!!!((((((###))!!!#!!'''''''''''''''!!+++++,,,,,,,,,,----",
+        "!!!!!!!!!!((((((((!!.!!!!!!!!!!'''''''!'''!!!+++++//,,,,,,,,----",
+        "!!!!!!!!!!((((((((!..!!!!!!!!!!!!!!!!!!!!!!!!!!!!0//,,,,,,,-----",
+        "!!!!!!!!!!(((((((.........!!!.!.!!!!!!!!!!!!!!!!////,,,,,-------",
+        "!!!!!!!!!!(((((((.........!.......!!!!!!!!!!!!!!////,,,,,-------",
+        "!!!!!!!!!!!((((((!!!!.....!..!!!....!!!!!!!1111!////,,223-------",
+        "!!!!!!!!!!!((((((!!!!.....!..!!!!!..111111111111////222222222---",
+        "!!!!!!!!!!!(((((!!!!!!.......!!!!!!.111111111111///3222222222---",
+        "!!!!!!!!!!!*((((!!!!!!!!!....!!!!!!.111111111111433332222!2222--",
+        "!!!!!!!!!!!!!..!...!!!!!!!!..!!.....111111111111222223222!!!222-",
+        "!!!!!!****!!!.......!!!!!!...!!.....111111111111223222!222!!2222",
+        "!!!!!*****!!!**....!!!!!!!...!!...!1111111111111221!222222!!2222",
+        "!!!!!*****!!!!*..!!!!!!!!!...!....11111111111111221!!22!!!!!222!",
+        "!!!!!*****!!!!..!!!!!!!!!!..........11111111111222!!!!!!!!!!!2!!",
+        "!!!!*****!!!!...!!!!!!!!...!!.......111111111111222!!!!!!!!!!!!!",
+        "!!!!!***!!!!*..!!!!!...!...!........111111111111122!!!!!!!!!!!!!",
+        "!!!!!!!!!!!!*..**!!.................1111111111111122!!!!!!!!!!!!",
+        "!!!!!!!!!!!!!.***!!..!!...!........11111111111111122!!!!!!!!!!!!",
+        "!!!!!!!!!!!!!...*!!..!!...!........11111111111111112!!!!!!!!!!!!",
+        "!!!!!!!!!!!!!......!..!!...........111111111111111152!!!!!!!!!!!",
+        "!!!!**!!!!!!!!**66....!!!77.........1111115511111155552!!!!!!!!!",
+        "*!!****!!!!****!666...!!777..!.....55555515555155555!555!!!!!!!!",
+        "*******!!******!6666!!7777777!...!.55555555555555555!!55!!!!!22!",
+        "88****!****6666!6666!!777777!!!..7!!!!555555!5555!55!!55!!!!222!",
+        "888******!!6666!666!!!7777777!77775!!!!!55!!!!!555555255!!!!222!",
+        "888*!**66666666666666!!!777777777755!!5555!!!!!555555555!!!!!222",
+        "8888!!!6666!!66666666!!!7777777!7755!55!!!!!!!!!!!55!552222!!!!2",
+        "8888!!!666!!66666!666777777777!7!!5555!!!!!!!!!!!!!!5552222999!2",
+        "88!!!!6666!!666!666!77777777777777!55!!!!!!!!!!!!!!!55:22:999999",
+        "8!!8!!666!!6666666!!777!!777777777!55!!!!!!!!!!!!!!!5:::::999999",
+        "88888!66!666666666666777777!!!777755!!!!!!!!!!!!!5555:::::!99999",
+        "88666!66!66666!!6666677!7777!7777755!!!!!!!!!!!555555:::::!99999",
+        ";6666666!!6666!6666677!777777777775!!!!!!!!!!!!555555:<<<::99999",
+        ";;666666666=66666667777777777777755!!!!!!!!!!!!!55555<<<<<:99999",
+        ";;666====6==66===667777777777775555!!!!!!!!!!!!!!!!55<<<<<<:9999",
+        ";;;;6==============>>>77777777755!!!!!!!!!!!!!!!!<55<<<<<<<<:999",
+        ";;;;6===============>>77777777775!!!!!!!!!!!!!!!!555<<<<<<<<<999",
+        ";;;;;================>777777777?55!!!!!!!!!!!!!!<55<<<<<<<<<<@@@",
+        ";;;AA================>7777!777??555!!!!!!!!!!!!!555<<<<<<<<<<@@@",
+        "BBBAA===============>>77777777???555555!!!!!!!!!55<<<<<<<<<<<@@@",
+        "BBBA===============>>777777???????55555!!!!!!!!!5<<<<<<<<<<<<@@@",
+        "BBBA==============>>>>>777????????55555!!!!!!!<55<<<<<<<<<<<<<<<",
+        "BBBA===============>>>>????????!??555555!!!!!5555<<<<<<<<<<<<<<<",
+        "BBB================>>>>????????!?!!555!5!!!!5555<<<<<<<<<<<<<<<<",
+        "BBB==============>>>????????????!!??5!!5!!!!5555!<<55C<<<<<<<<<<",
+        "BBB===========>=>>>>????????????????!?55!!!!!5555<555C<<<<<<<<<<",
+        "DDA===========>>>>>>!????????????????555E55!!!!55555C<<<<<<<<<<<",
+        "D!!===========>>>>>>????????????????E555555F!!!!CC55C<<<<<<@<<@@",
+        "!!!!==!!!===GG>>>>>>>???????E??!EEEEEEEEEE5FFFFFFF55CCCCCC<@!@@@",
+        "!!!!!!!!!!!GGG>>G>>>!???!??EEEEEEEEEEE!E!EEFFFFFFFCCCCCCCC!!@@@@",
+        "!!!!!!!!!!!GGGGHHH>>!>??!IEEEEEEEEEEE!!EEEEFFFFFFFCCCCCCCC@@@@@@",
+        "!!!!!!!!!JJ!GGGGHH!!!>>I!IEEEEEEE!!EEEEEEEEFFFFFFFCCCCCCCCC@@@@@",
+        "!!!!!!!!JJJ!HHHHHHH!IIIIIEEEEEEEEEE!!EEEE!FFFFFFFFCCCCCCCCC!@@@@",
+        "!!!!!!!!JJJ!HHHHHHH!IIIIIEEEEEEEEEE!!EEEEFFFFFFFFFCCCCCCCCC@@@@!"
+    ],
+    "keys": [
+        [
+            "23424950",
+            "",
+            "23424853",
+            "23424742",
+            "23424890",
+            "23424969",
+            "23424833",
+            "23424967",
+            "23424897",
+            "23424740",
+            "26812346",
+            "23424956",
+            "23424855",
+            "23424882",
+            "28289408",
+            "23424873",
+            "23424802",
+            "23424938",
+            "23424860",
+            "23424852",
+            "23424952",
+            "23424906",
+            "23424777",
+            "23424891",
+            "23425002",
+            "23424806",
+            "23424978",
+            "23424808",
+            "23424908",
+            "23424785",
+            "23424792",
+            "23424949",
+            "23424764",
+            "23424965",
+            "23424863",
+            "23424824",
+            "23424780",
+            "23424974",
+            "23424804",
+            "23424822",
+            "23424779",
+            "23424966"
+        ],
+        [
+            "",
+            "2344625",
+            "2344610",
+            "2344609",
+            "2344618",
+            "2344607",
+            "2344621",
+            "2344605",
+            "2344594",
+            "2344582",
+            "2344617",
+            "2344601",
+            "2344587",
+            "2344599",
+            "2344591",
+            "7153344",
+            "2344597",
+            "2344613",
+            "2344619",
+            "2344612",
+            "2344620",
+            "2346138",
+            "2344615",
+            "2346145",
+            "2346144",
+            "2346142",
+            "2346137",
+            "2346132",
+            "2346128",
+            "2344604",
+            "2346139",
+            "2346140",
+            "2346130",
+            "2346143",
+            "2346950",
+            "2344616",
+            "2346122",
+            "2346961",
+            "2344623",
+            "2346124",
+            "2346962",
+            "2346957",
+            "2346135",
+            "2346126",
+            "2346952",
+            "2346954",
+            "2346125",
+            "2346958",
+            "2346951",
+            "2346959",
+            "2344947",
+            "20069904",
+            "2346324",
+            "20069999",
+            "20069903",
+            "2346955",
+            "2346960",
+            "20069905",
+            "2346181",
+            "2346329",
+            "20069819",
+            "2346327",
+            "20069895",
+            "20069914",
+            "20069916",
+            "20069915",
+            "20069911",
+            "20069912",
+            "20069906",
+            "20069894",
+            "20069893",
+            "20069913",
+            "20069910",
+            "20069907",
+            "20069908",
+            "20069897",
+            "20069909",
+            "20069899",
+            "20069896",
+            "20069898",
+            "20069902",
+            "20069901",
+            "20070152",
+            "2344985",
+            "56013540",
+            "2345103",
+            "20069830",
+            "2345454"
+        ]
+    ],
+    "data": [
+        {
+            "23424740": {
+                "label": "Algeria",
+                "place_id": "ORyW1j2bApgE.0qQ1w",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424740,
+                "__id__": 9
+            },
+            "23424742": {
+                "label": "Albania",
+                "place_id": "5vfTLnubApiLBhNR.w",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424742,
+                "__id__": 11
+            },
+            "23424764": {
+                "label": "Benin",
+                "place_id": "xbugkTabApgvllxe2g",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424764,
+                "__id__": 31
+            },
+            "23424777": {
+                "label": "Chad",
+                "place_id": "rW3W6XubAph1h5qU5A",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424777,
+                "__id__": 41
+            },
+            "23424779": {
+                "label": "Congo",
+                "place_id": "52QT_bqbApjFEe3Few",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424779,
+                "__id__": 43
+            },
+            "23424780": {
+                "label": "Democratic Republic of Congo",
+                "place_id": "C_sN_rmbApjxNsR10A",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424780,
+                "__id__": 44
+            },
+            "23424785": {
+                "label": "Cameroon",
+                "place_id": "PAHftWWbApgiXJSV0g",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424785,
+                "__id__": 49
+            },
+            "23424792": {
+                "label": "Central African Republic",
+                "place_id": "9do_6MebApiKmpjaaw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424792,
+                "__id__": 54
+            },
+            "23424802": {
+                "label": "Egypt",
+                "place_id": "Pu5_HsObApilq4vUtQ",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424802,
+                "__id__": 63
+            },
+            "23424804": {
+                "label": "Equatorial Guinea",
+                "place_id": "JvTMIFubApjqSiQeCw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424804,
+                "__id__": 65
+            },
+            "23424806": {
+                "label": "Eritrea",
+                "place_id": "RhHr7dabApjqd5Tdxw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424806,
+                "__id__": 67
+            },
+            "23424808": {
+                "label": "Ethiopia",
+                "place_id": "adtSGRKbApizQ8GeVA",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424808,
+                "__id__": 69
+            },
+            "23424822": {
+                "label": "Gabon",
+                "place_id": "c5unhWebApiRc1KLVA",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424822,
+                "__id__": 80
+            },
+            "23424824": {
+                "label": "Ghana",
+                "place_id": "AMCzGkqbApgwZCTi5w",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424824,
+                "__id__": 82
+            },
+            "23424833": {
+                "label": "Greece",
+                "place_id": "zM5Y.8KbApibMHBs6g",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424833,
+                "__id__": 89
+            },
+            "23424852": {
+                "label": "Israel",
+                "place_id": "ktwvIm6bApiHRCYuCw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424852,
+                "__id__": 102
+            },
+            "23424853": {
+                "label": "Italy",
+                "place_id": "mpa01jWbAphICsyCsA",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424853,
+                "__id__": 103
+            },
+            "23424855": {
+                "label": "Iraq",
+                "place_id": "gsz9goybApiUhrfYWQ",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424855,
+                "__id__": 105
+            },
+            "23424860": {
+                "label": "Jordan",
+                "place_id": "t1nzQlabApislO4_Ng",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424860,
+                "__id__": 108
+            },
+            "23424863": {
+                "label": "Kenya",
+                "place_id": "beQahHabAph9YX72Bg",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424863,
+                "__id__": 109
+            },
+            "23424873": {
+                "label": "Lebanon",
+                "place_id": "KqieB9ibApgOVlou.g",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424873,
+                "__id__": 118
+            },
+            "23424882": {
+                "label": "Libya",
+                "place_id": "fjfChhqbAph4Po9qnQ",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424882,
+                "__id__": 126
+            },
+            "23424890": {
+                "label": "Macedonia",
+                "place_id": "KorxKmubApj5tgGqIw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424890,
+                "__id__": 134
+            },
+            "23424891": {
+                "label": "Mali",
+                "place_id": "Kckuqs.bApgn52ySOA",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424891,
+                "__id__": 135
+            },
+            "23424897": {
+                "label": "Malta",
+                "place_id": "Ju2IetqbApgVybuIIw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424897,
+                "__id__": 140
+            },
+            "23424906": {
+                "label": "Niger",
+                "place_id": "xjMTDWebApjKuhXX2w",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424906,
+                "__id__": 149
+            },
+            "23424908": {
+                "label": "Nigeria",
+                "place_id": "RAanp1SbAphrfiOjnQ",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424908,
+                "__id__": 151
+            },
+            "23424938": {
+                "label": "Saudi Arabia",
+                "place_id": "9y6.AxebAphKDEN_hg",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424938,
+                "__id__": 179
+            },
+            "23424949": {
+                "label": "Somalia",
+                "place_id": "8Gyen6abAphUelKElw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424949,
+                "__id__": 190
+            },
+            "23424950": {
+                "label": "Spain",
+                "place_id": "3s63vaibApjQipWazQ",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424950,
+                "__id__": 191
+            },
+            "23424952": {
+                "label": "Sudan",
+                "place_id": "9yNom0ybApiMmOsh.Q",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424952,
+                "__id__": 193
+            },
+            "23424956": {
+                "label": "Syria",
+                "place_id": "MCfUBUqbAphARLGJeg",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424956,
+                "__id__": 196
+            },
+            "23424965": {
+                "label": "Togo",
+                "place_id": "Eb_XBMibApi6E.CBYA",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424965,
+                "__id__": 203
+            },
+            "23424966": {
+                "label": "Sao Tome and Principe",
+                "place_id": "Dd9nWmqbAphsplI0Gw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424966,
+                "__id__": 204
+            },
+            "23424967": {
+                "label": "Tunisia",
+                "place_id": "R0Xz5ZKbApgMxoYh1w",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424967,
+                "__id__": 205
+            },
+            "23424969": {
+                "label": "Turkey",
+                "place_id": "FjYPPTmbApi1G.RRlw",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424969,
+                "__id__": 207
+            },
+            "23424974": {
+                "label": "Uganda",
+                "place_id": "dZhYeOWbAphhU.1P0A",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424974,
+                "__id__": 212
+            },
+            "23424978": {
+                "label": "Burkina Faso",
+                "place_id": "qlfX7bqbAphcq7090g",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23424978,
+                "__id__": 216
+            },
+            "23425002": {
+                "label": "Yemen",
+                "place_id": "stkCiEabAphGFkrFLg",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 23425002,
+                "__id__": 230
+            },
+            "26812346": {
+                "label": "Cyprus",
+                "place_id": "a8lDDD6bB5SdIb2xbg",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 26812346,
+                "__id__": 234
+            },
+            "28289408": {
+                "label": "Palestinian Occupied Territories",
+                "place_id": "JB8DH62bCZ56qA5neg",
+                "place_ty_1": 12,
+                "place_type": "country",
+                "woe_id": 28289408,
+                "__id__": 236
+            }
+        },
+        {
+            "2344582": {
+                "label": "Medea, DZ, Algeria",
+                "place_id": "pB4eruGbAphxZeAj",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344582,
+                "__id__": 41
+            },
+            "2344587": {
+                "label": "Tiaret, DZ, Algeria",
+                "place_id": "LpzLI8ubAphZyzF4",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344587,
+                "__id__": 46
+            },
+            "2344591": {
+                "label": "Biskra, DZ, Algeria",
+                "place_id": "9BS20RabAphWjy3G",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344591,
+                "__id__": 50
+            },
+            "2344594": {
+                "label": "Djelfa, DZ, Algeria",
+                "place_id": "ErnrHRabAph42Tox",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344594,
+                "__id__": 53
+            },
+            "2344597": {
+                "label": "Laghouat, DZ, Algeria",
+                "place_id": "x6kC9tibApgm3o.i",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344597,
+                "__id__": 56
+            },
+            "2344599": {
+                "label": "M'sila, DZ, Algeria",
+                "place_id": "GDgJ4pqbApgjB7XI",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344599,
+                "__id__": 58
+            },
+            "2344601": {
+                "label": "Sidi Bel Abbes, DZ, Algeria",
+                "place_id": "EPVwUtybApjK7EhC",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344601,
+                "__id__": 59
+            },
+            "2344604": {
+                "label": "Adrar, DZ, Algeria",
+                "place_id": "3Nolnx2bAphMg6Ey",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344604,
+                "__id__": 62
+            },
+            "2344605": {
+                "label": "Ain Defla, DZ, Algeria",
+                "place_id": "9SSovpmbApiwqCcE",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344605,
+                "__id__": 63
+            },
+            "2344607": {
+                "label": "Annaba, DZ, Algeria",
+                "place_id": "1TyuK_GbApg49wAe",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344607,
+                "__id__": 65
+            },
+            "2344609": {
+                "label": "Bordj Bou Arreridj, DZ, Algeria",
+                "place_id": "tRoE3cGbApgpyFXo",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344609,
+                "__id__": 67
+            },
+            "2344610": {
+                "label": "Boumerdes, DZ, Algeria",
+                "place_id": "4sluPeubApjjaFfp",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344610,
+                "__id__": 68
+            },
+            "2344612": {
+                "label": "El Bayadh, DZ, Algeria",
+                "place_id": "p0WljcubApizgPxB",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344612,
+                "__id__": 70
+            },
+            "2344613": {
+                "label": "El Oued, DZ, Algeria",
+                "place_id": "jvMxOzCbApjmZk_T",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344613,
+                "__id__": 71
+            },
+            "2344615": {
+                "label": "Ghardaia, DZ, Algeria",
+                "place_id": "hTxtPcGbAphENJWH",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344615,
+                "__id__": 73
+            },
+            "2344616": {
+                "label": "Illizi, DZ, Algeria",
+                "place_id": "dF3Ce92bApiEGC5T",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344616,
+                "__id__": 74
+            },
+            "2344617": {
+                "label": "Khenchela, DZ, Algeria",
+                "place_id": "F3QuUeWbAphVX8K8",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344617,
+                "__id__": 75
+            },
+            "2344618": {
+                "label": "Mila, DZ, Algeria",
+                "place_id": "7h8LjFebApgxj2bl",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344618,
+                "__id__": 76
+            },
+            "2344619": {
+                "label": "Naama, DZ, Algeria",
+                "place_id": "HbtjQ6KbApi6bwnD",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344619,
+                "__id__": 77
+            },
+            "2344620": {
+                "label": "Ouargla, DZ, Algeria",
+                "place_id": "H4VQM0ObApjApz7.",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344620,
+                "__id__": 78
+            },
+            "2344621": {
+                "label": "Relizane, DZ, Algeria",
+                "place_id": "iIorDmWbAphi87OQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344621,
+                "__id__": 79
+            },
+            "2344623": {
+                "label": "Tamanghasset, DZ, Algeria",
+                "place_id": "fESVGnabAphVIpl_",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344623,
+                "__id__": 80
+            },
+            "2344625": {
+                "label": "Tipaza, DZ, Algeria",
+                "place_id": "JiPKQQ.bApjO0UHq",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344625,
+                "__id__": 82
+            },
+            "2344947": {
+                "label": "Borkou-Ennedi-Tibesti, TD, Chad",
+                "place_id": "vHXARZ2bApj2mXHn",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344947,
+                "__id__": 316
+            },
+            "2344985": {
+                "label": "Orientale, CD, Democratic Republic of Congo",
+                "place_id": "22vTEHibAphB8hEq",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2344985,
+                "__id__": 345
+            },
+            "2345103": {
+                "label": "Sangha-MbaÃ©rÃ©, CF, Central African Republic",
+                "place_id": "TTTxqnibApj0_Owm",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2345103,
+                "__id__": 415
+            },
+            "2345454": {
+                "label": "Ogooue-Ivindo, GA, Gabon",
+                "place_id": "SDKN8ribAphzHAjQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2345454,
+                "__id__": 612
+            },
+            "2346122": {
+                "label": "Al Jufrah, LY, Libya",
+                "place_id": "HMgVrTmbApgXZueb",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346122,
+                "__id__": 983
+            },
+            "2346124": {
+                "label": "Ash Shati', LY, Libya",
+                "place_id": "bV1.Ym.bApjXQpKr",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346124,
+                "__id__": 985
+            },
+            "2346125": {
+                "label": "Murzuq, LY, Libya",
+                "place_id": "p6vMAZGbAphYQRYQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346125,
+                "__id__": 986
+            },
+            "2346126": {
+                "label": "Sabha, LY, Libya",
+                "place_id": "YzdFxD6bAphjCRhn",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346126,
+                "__id__": 987
+            },
+            "2346128": {
+                "label": "Tsubruq, LY, Libya",
+                "place_id": "8OWXrxqbApjim.0x",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346128,
+                "__id__": 989
+            },
+            "2346130": {
+                "label": "Ajdabiya, LY, Libya",
+                "place_id": "JCLE69.bApiOFDEq",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346130,
+                "__id__": 991
+            },
+            "2346132": {
+                "label": "Al Jabal al Akhdar, LY, Libya",
+                "place_id": "SdstKO.bAphe4A1e",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346132,
+                "__id__": 993
+            },
+            "2346135": {
+                "label": "Awbari, LY, Libya",
+                "place_id": "13urFa6bApg5oE3V",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346135,
+                "__id__": 996
+            },
+            "2346137": {
+                "label": "Banghazi, LY, Libya",
+                "place_id": "B7E.pbKbApjvC9E0",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346137,
+                "__id__": 998
+            },
+            "2346138": {
+                "label": "Darnah, LY, Libya",
+                "place_id": "JZHPi9SbApgPlXKt",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346138,
+                "__id__": 999
+            },
+            "2346139": {
+                "label": "Ghadamis, LY, Libya",
+                "place_id": "adqI66mbApjzdjRM",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346139,
+                "__id__": 1000
+            },
+            "2346140": {
+                "label": "Gharyan, LY, Libya",
+                "place_id": "1AcLVTObApjKH1Cj",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346140,
+                "__id__": 1001
+            },
+            "2346142": {
+                "label": "Sawfajjin, LY, Libya",
+                "place_id": "LvF.iS.bApgD0Ci3",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346142,
+                "__id__": 1003
+            },
+            "2346143": {
+                "label": "Surt, LY, Libya",
+                "place_id": "X.Ii1KubApg_ahS6",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346143,
+                "__id__": 1004
+            },
+            "2346144": {
+                "label": "Tsarrbuus, LY, Libya",
+                "place_id": "HfqHbW6bAph6Mbc5",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346144,
+                "__id__": 1005
+            },
+            "2346145": {
+                "label": "Yafran, LY, Libya",
+                "place_id": "5qXu6P2bApgPf4bs",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346145,
+                "__id__": 1006
+            },
+            "2346181": {
+                "label": "Gao, ML, Mali",
+                "place_id": "v3RZZ3ibApg9zJjK",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346181,
+                "__id__": 1032
+            },
+            "2346324": {
+                "label": "Agadez, NE, Niger",
+                "place_id": "1n0amC6bApj2APhg",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346324,
+                "__id__": 1160
+            },
+            "2346327": {
+                "label": "Maradi, NE, Niger",
+                "place_id": "Q6LoZq.bApjT0SDh",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346327,
+                "__id__": 1163
+            },
+            "2346329": {
+                "label": "Tahoua, NE, Niger",
+                "place_id": "glWnVjqbApgr6zn5",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346329,
+                "__id__": 1164
+            },
+            "2346950": {
+                "label": "Al Jawf, SA, Saudi Arabia",
+                "place_id": "Jd7xRSObAphmoq47",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346950,
+                "__id__": 1541
+            },
+            "2346951": {
+                "label": "Ar Riyad, SA, Saudi Arabia",
+                "place_id": "nSANoIubApiGPqZR",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346951,
+                "__id__": 1542
+            },
+            "2346952": {
+                "label": "Al Qasim, SA, Saudi Arabia",
+                "place_id": "VacYccObAphTaCB3",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346952,
+                "__id__": 1543
+            },
+            "2346954": {
+                "label": "Ash Sharqiyah, SA, Saudi Arabia",
+                "place_id": "th7hiF.bAphSfpoM",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346954,
+                "__id__": 1544
+            },
+            "2346955": {
+                "label": "Asir, SA, Saudi Arabia",
+                "place_id": "j6ae21CbApgRisFF",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346955,
+                "__id__": 1545
+            },
+            "2346957": {
+                "label": "Hail, SA, Saudi Arabia",
+                "place_id": "IVRLsFGbApje2DOY",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346957,
+                "__id__": 1547
+            },
+            "2346958": {
+                "label": "Al Madinah, SA, Saudi Arabia",
+                "place_id": "dAa9DPObApi27lwr",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346958,
+                "__id__": 1548
+            },
+            "2346959": {
+                "label": "Makka, SA, Saudi Arabia",
+                "place_id": "LkTfSP.bApjQLH7e",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346959,
+                "__id__": 1549
+            },
+            "2346960": {
+                "label": "Najran, SA, Saudi Arabia",
+                "place_id": "EDL8tAmbApgB9RiR",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346960,
+                "__id__": 1550
+            },
+            "2346961": {
+                "label": "Al Hudud ash Shamaliyah, SA, Saudi Arabia",
+                "place_id": "CWDJbU.bApgeJQLA",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346961,
+                "__id__": 1551
+            },
+            "2346962": {
+                "label": "Tabuk, SA, Saudi Arabia",
+                "place_id": "hTkymcObApg4_Upn",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 2346962,
+                "__id__": 1552
+            },
+            "7153344": {
+                "label": "Sicily, IT, Italy",
+                "place_id": "BGqr7w.eAJn5qzdS",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 7153344,
+                "__id__": 2164
+            },
+            "20069819": {
+                "label": "Al Khartum, SD, Sudan",
+                "place_id": "TSt6nPGbAZxPUesqAQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069819,
+                "__id__": 2330
+            },
+            "20069830": {
+                "label": "North Kivu, CD, Democratic Republic of Congo",
+                "place_id": "oWCm.ZObAZxdXoJxgw",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069830,
+                "__id__": 2339
+            },
+            "20069893": {
+                "label": "Janub Darfur, SD, Sudan",
+                "place_id": "F8_kyeqbAZw8GRntvw",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069893,
+                "__id__": 2396
+            },
+            "20069894": {
+                "label": "Gharb Darfur, SD, Sudan",
+                "place_id": ".TUsYNCbAZxMmQkg9g",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069894,
+                "__id__": 2397
+            },
+            "20069895": {
+                "label": "Shamal Darfur, SD, Sudan",
+                "place_id": "DnCU5uqbAZyfhlnFww",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069895,
+                "__id__": 2398
+            },
+            "20069896": {
+                "label": "Al Buhayrat, SD, Sudan",
+                "place_id": "JkzCvrGbAZxwP2zEHA",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069896,
+                "__id__": 2399
+            },
+            "20069897": {
+                "label": "Shamal Bahr al Ghazal, SD, Sudan",
+                "place_id": "C6Ne9SmbAZzQbeQx9w",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069897,
+                "__id__": 2400
+            },
+            "20069898": {
+                "label": "Warab, SD, Sudan",
+                "place_id": "drFrTiWbAZyspyRSkA",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069898,
+                "__id__": 2401
+            },
+            "20069899": {
+                "label": "Gharb Bahr al Ghazal, SD, Sudan",
+                "place_id": "KQgJxm.bAZwS0O9mlQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069899,
+                "__id__": 2402
+            },
+            "20069901": {
+                "label": "Sharq al IstiwaÂ´iyah, SD, Sudan",
+                "place_id": "3B4lEYqbAZwze0T8Bg",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069901,
+                "__id__": 2404
+            },
+            "20069902": {
+                "label": "Bahr al Jabal, SD, Sudan",
+                "place_id": "pxLRpx6bAZxbkBi9XQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069902,
+                "__id__": 2405
+            },
+            "20069903": {
+                "label": "Nahr an Nil, SD, Sudan",
+                "place_id": "lVWr6ZubAZy84Ctr5A",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069903,
+                "__id__": 2406
+            },
+            "20069904": {
+                "label": "Al Bahr al Ahmar, SD, Sudan",
+                "place_id": "0rkkLFCbAZw1mq0WGA",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069904,
+                "__id__": 2407
+            },
+            "20069905": {
+                "label": "Kassala, SD, Sudan",
+                "place_id": "4ipYJQqbAZz3kGIgsg",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069905,
+                "__id__": 2408
+            },
+            "20069906": {
+                "label": "Al Qadarif, SD, Sudan",
+                "place_id": "NjjYYyCbAZxso61R7A",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069906,
+                "__id__": 2409
+            },
+            "20069907": {
+                "label": "Al Wahdah, SD, Sudan",
+                "place_id": "IUwMPMibAZxqvQCU8A",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069907,
+                "__id__": 2410
+            },
+            "20069908": {
+                "label": "A`ali an Nil, SD, Sudan",
+                "place_id": "uF6iVfmbAZw.0SpYqw",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069908,
+                "__id__": 2411
+            },
+            "20069909": {
+                "label": "Junqali, SD, Sudan",
+                "place_id": "IHC4vuubAZwI0svl3w",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069909,
+                "__id__": 2412
+            },
+            "20069910": {
+                "label": "Janub Kurdufan, SD, Sudan",
+                "place_id": "ntj8IwybAZwZsjaSDA",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069910,
+                "__id__": 2413
+            },
+            "20069911": {
+                "label": "Gharb Kurdufan, SD, Sudan",
+                "place_id": "mJPvJGibAZwbWSIjww",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069911,
+                "__id__": 2414
+            },
+            "20069912": {
+                "label": "Shamal Kurdufan, SD, Sudan",
+                "place_id": "dr4wok.bAZxX4HTrrw",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069912,
+                "__id__": 2415
+            },
+            "20069913": {
+                "label": "An Nil al Azraq, SD, Sudan",
+                "place_id": "8GzePEybAZzNEFMjsQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069913,
+                "__id__": 2416
+            },
+            "20069914": {
+                "label": "An Nil al Abyad, SD, Sudan",
+                "place_id": "yN5muK6bAZzZieH45g",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069914,
+                "__id__": 2417
+            },
+            "20069915": {
+                "label": "Sinnar, SD, Sudan",
+                "place_id": "YlEduEibAZzhxchlwQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069915,
+                "__id__": 2418
+            },
+            "20069916": {
+                "label": "Al Jazirah, SD, Sudan",
+                "place_id": "y9I4GqibAZx1gFmpVQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069916,
+                "__id__": 2419
+            },
+            "20069999": {
+                "label": "Ash Shamaliyah, SD, Sudan",
+                "place_id": "ASdwCFebAZw7BhWrhw",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20069999,
+                "__id__": 2436
+            },
+            "20070152": {
+                "label": "Bayelsa, NG, Nigeria",
+                "place_id": "YPgQJQubAZwfnS89Yg",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 20070152,
+                "__id__": 2571
+            },
+            "56013540": {
+                "label": "Somali, ET, Ethiopia",
+                "place_id": "H3ZEgZycB5yNn8uRoQ",
+                "place_ty_1": 8,
+                "place_type": "region",
+                "woe_id": 56013540,
+                "__id__": 3378
+            }
+        }
+    ]
+}
