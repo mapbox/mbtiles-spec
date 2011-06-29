@@ -1,7 +1,0 @@
-{
-    "formatter":
-        [
-            "function(options, data) {   switch (options.format) {    case 'full':       return '' + data[\"label\"] + ' (' + data[\"woe_id\"] + ')';       break;     case 'location':       return '';       break;     case 'teaser':     default:       return '' + data[\"label\"] + '';       break;   }}",
-            "function(options, data) {   switch (options.format) {    case 'full':       return '' + data[\"label\"] + '';       break;     case 'location':       return '';       break;     case 'teaser':     default:       return '' + data[\"label\"] + '';       break;   }}"
-    ]
-}

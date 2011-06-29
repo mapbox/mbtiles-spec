@@ -10,10 +10,6 @@ MBTiles is a specification for storing tiled map data in  [SQLite](http://sqlite
 
 # Changelog
 
-## 2.0
-
-* UTFGrid is updated to support composited layers.
-
 ## 1.1
 
 * `name='format'` row **required** in `metadata` table.
