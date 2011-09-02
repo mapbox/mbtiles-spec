@@ -23,7 +23,7 @@
   </p>
   <p>
     Developers that want to learn more about MBTiles can
-    <a href="https://github.com/mapbox/mbtiles-spec">view the full specification</a>.
+    <a href="http://ds.io/nH1vCM">view the full specification</a>.
   </p>
 
   <h2>Features</h2>
@@ -38,7 +38,12 @@
     Internet connection.</p>
   <h3>Compatible</h3>
   <p>Images are stored as blob data, so tiles can be read by most SQLite
-    clients.</p>
+  clients. There are many <a href='http://ds.io/phCn8G'>implementations of MBTiles</a> from different organizations- notably <a href='http://tilemill.com'>TileMill</a>, <a href='http://mapbox.com/#/tilestream'>TileStream</a>, <a href='http://www.arc2earth.com/'>Arc2Earth</a>, and <a href='http://mapbox.com/#/ipad'>MapBox for iPad</a>.</p>
+
+  <h3>Open</h3>
+  <p>MBTiles is an open-source specification. The specification text itself
+  requires <a href='http://ds.io/r8AtMB'>attribution</a>, but there are absolutely
+  no restrictions or requirements placed on implementations.</p>
 
   <h2>Example</h2>
   <p>Download the <a href='http://a.tiles.mapbox.com/mapbox/download/haiti-terrain-grey.mbtiles'>Haiti Terrain Grey tileset</a>. Then, open the MBTiles file in the sqlite client.</p>
@@ -52,11 +57,22 @@
 5|9|18|????
 5|10|17|????
 5|10|18|????</code></pre>
-  <p>The <code>????</code> charecters represents PNG images stored as blob data.</p>
+  <p>The <code>????</code> characters represents PNG images stored as blob data.</p>
 
-  <a href="https://github.com/mapbox/mbtiles-spec">View the full specification</a>.
+  <a href="http://ds.io/nH1vCM">View the full specification</a>.
 </div>
-
-
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4e61304cf5a1f57f51000001');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
 </body>
 </html>
