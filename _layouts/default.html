@@ -1,0 +1,99 @@
+---
+# MapBox project pages template
+# -----------------------------
+navigation:
+  - title: Design
+    path: /design
+    category: design
+  - title: Hosting
+    path: /hosting
+    category: hosting
+  - title: Support
+    path: /support
+    category: support
+  - title: Showcase
+    path: /showcase
+    category: showcase
+  - title: Developers
+    path: /developers
+    category: developers
+footer:
+  - title: About
+    path: /about
+  - title: iPad
+    path: /ipad
+  - title: Contact
+    path: /contact
+  - title: Terms of Service
+    path: /tos
+  - title: Privacy Policy
+    path: /privacy
+---
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  {% if page.description %}<meta name='description' content='{{page.description}}'/>{% endif %}
+  <title>{{page.title}} | MapBox</title>
+  <link rel='stylesheet' href='http://mapbox.github.com/site.css' type='text/css'/>
+  <!--[if IE]><link rel='stylesheet' href='http://mapbox.github.com/site-ie.css' type='text/css'/><![endif]-->
+  <link rel='shortcut icon' href='http://mapbox.github.com/images/favicon.ico' type='image/x-icon' />
+  <script src='http://mapbox.github.com/site.js' type='text/javascript'></script>
+</head>
+<body {% if page.class %}class='{{page.class}}'{% endif %}>
+
+<div class='branding'><div class='limiter'>
+  <a class='logo' href='http://mapbox.github.com/'>MapBox</a>
+  <ul class='menu'>
+    {% for item in page.navigation %}
+    <li class='{{item.category}} {% if item.category == 'developers' %}active{% endif %}'>
+      <a href='http://mapbox.github.com{{item.path}}/'><span class='icon'></span>{{item.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <a class='goto' href='http://tiles.mapbox.com'>
+    <span class='icon'></span>
+    Login <em>to TileStream</em>
+  </a>
+</div></div>
+
+<div class='limiter title'>
+<small class='breadcrumb'>
+<a href='http://mapbox.github.com/developers'>Developers</a> /
+<a href='{{site.baseurl}}'>{{site.title}}</a>
+</small>
+<h1>{{page.title}}</h1>
+</div>
+
+<div class='limiter'><div class='content clearfix'>
+
+<div class='col-3 prose'>{{content}}</div>
+
+{% if site.posts.size > 1 %}
+<div class='book'><ul>
+{% for item in site.posts reversed %}
+<li><a {% if page.url == item.url %}class='active'{% endif %} href='{{site.baseurl}}{{item.url}}'>{% if page.url == item.url %}<span class='icon'></span>{% endif %}{{item.title}}</a></li>
+{% endfor %}
+</ul></div>
+{% endif %}
+
+</div></div>
+
+<div class='footer'><div class='limiter'>
+
+<div class='links'>
+<strong>MapBox®</strong>
+{% for item in page.footer %}
+<a href='http://mapbox.github.com{{item.path}}/'>{{item.title}}</a>
+{% endfor %}
+</div>
+
+<a class='ds' href='http://developmentseed.org' target='_blank'>
+<span class='madeby'>Made by Development Seed</span>
+<span class='office'></span>
+</a>
+
+</div></div>
+
+</body>
+</html>

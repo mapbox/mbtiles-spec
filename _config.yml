@@ -1,0 +1,6 @@
+auto: true
+server: true
+exclude: README.md, .gitignore
+baseurl: /mbtiles-spec
+permalink: /:categories/:title
+title: MBTiles
