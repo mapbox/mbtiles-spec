@@ -4,3 +4,4 @@ exclude: README.md, .gitignore
 baseurl: /mbtiles-spec
 permalink: /:categories/:title
 title: MBTiles
+url: http://mapbox.github.com
