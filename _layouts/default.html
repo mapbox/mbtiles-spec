@@ -14,9 +14,9 @@ navigation:
   - title: Showcase
     path: /showcase
     category: showcase
-  - title: Developers
-    path: /developers
-    category: developers
+  - title: Documentation
+    path: /documentation
+    category: documentation
 footer:
   - title: About
     path: /about
@@ -46,7 +46,7 @@ footer:
   <a class='logo' href='http://mapbox.github.com/'>MapBox</a>
   <ul class='menu'>
     {% for item in page.navigation %}
-    <li class='{{item.category}} {% if item.category == 'developers' %}active{% endif %}'>
+    <li class='{{item.category}} {% if item.category == 'documentation' %}active{% endif %}'>
       <a href='http://mapbox.github.com{{item.path}}/'><span class='icon'></span>{{item.title}}</a>
     </li>
     {% endfor %}
@@ -59,8 +59,8 @@ footer:
 
 <div class='limiter title'>
 <small class='breadcrumb'>
-<a href='http://mapbox.github.com/developers'>Developers</a> /
-<a href='http://mapbox.github.com{{site.baseurl}}'>{{site.title}}</a>
+<a href='http://mapbox.github.com/documentation'>Documentation</a> /
+<a href='{{site.baseurl}}'>{{site.title}}</a>
 </small>
 <h1>{{page.title}}</h1>
 </div>
