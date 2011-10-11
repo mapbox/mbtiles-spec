@@ -7,6 +7,7 @@ to ensure compatibility with devices.
 
 # Versions
 
+* **Development** - NOT USABLE: [1.2](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md)
 * **Stable**: [1.1](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/spec.md)
 * [1.0](https://github.com/mapbox/mbtiles-spec/blob/master/1.0/spec.md)
 
