@@ -1,9 +1,9 @@
-# MBTiles 1.1
+# MBTiles 1.2
 
 # Sub-sections:
 
 * **Interaction**: HTTP endpoints needed for implementing interactivity
-* **UTFGrid**: storage of data used for interactivity
+* **UTFGrid**: This specification relies on [UTFGrid 1.2](https://github.com/mapbox/utfgrid-spec) for interactivity.
 
 ## Abstract
 

@@ -5,6 +5,15 @@ MBTiles is a specification for storing tiled map data in
 MBTiles files, known as **tilesets**, must implement the specification below
 to ensure compatibility with devices.
 
+## UTFGrid
+
+The MBTiles specification previously contained the
+[UTFGrid specification](https://github.com/mapbox/utfgrid-spec).
+It was removed in version 1.2 and moved into its own specification
+with synced version numbers - so MBTiles 1.2 is compatible with
+UTFGrid 1.2. The specs integrate but do not require each other
+for compliance.
+
 # Versions
 
 * **Development** - NOT USABLE: [1.2](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md)
