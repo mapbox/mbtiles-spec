@@ -2,18 +2,18 @@
 # MapBox project pages template
 # -----------------------------
 navigation:
+  - title: Maps
+    path: http://tiles.mapbox.com
+    category: maps
   - title: Design
     path: /tilemill
     category: design
   - title: Hosting
-    path: /tilestream
+    path: /hosting
     category: hosting
   - title: Support
     path: /support
     category: support
-  - title: Showcase
-    path: /showcase
-    category: showcase
   - title: Documentation
     path: /documentation
     category: documentation
@@ -51,10 +51,12 @@ footer:
     </li>
     {% endfor %}
   </ul>
-  <a class='goto' href='http://tiles.mapbox.com'>
-    <span class='icon'></span>
-    Login <em>to TileStream</em>
-  </a>
+  <small class='auth'>
+    <a class='login' href='http://tiles.mapbox.com/login'>
+      <span class='icon'></span>
+      My account
+    </a>
+  </small>
 </div></div>
 
 <div class='limiter title'>
