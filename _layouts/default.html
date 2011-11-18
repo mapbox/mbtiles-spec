@@ -47,7 +47,11 @@ footer:
   <ul class='menu'>
     {% for item in page.navigation %}
     <li class='{{item.category}} {% if item.category == 'documentation' %}active{% endif %}'>
-      <a href='{{site.url}}{{item.path}}/'><span class='icon'></span>{{item.title}}</a>
+      {% if item.path contains '://' %}
+      <a href='{{item.path}}'><span class='icon'></span>{{item.title}}</a>
+      {% else %}
+      <a href='{{site.url}}{{item.path}}'><span class='icon'></span>{{item.title}}</a>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
