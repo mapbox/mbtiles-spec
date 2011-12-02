@@ -54,7 +54,7 @@ One row in `metadata` is **suggested** and, if provided, may enhance performance
   **left, bottom, right, top**. Example of the full earth: `-180.0,-85,180,85`.
 
 Several additional keys are supported for tilesets that implement
-UTFGrid-based interaction. See `interaction.md`.
+[UTFGrid-based interaction](https://github.com/mapbox/utfgrid-spec).
 
 ### Tiles
 
