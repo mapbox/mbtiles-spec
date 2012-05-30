@@ -53,9 +53,7 @@ One MBTiles file represents a single tileset, optionally including grids
 of interactivity data. Multiple tilesets - layers, or maps in other terms,
 can be represented by multiple MBTiles files.
 
-# Implementations
-
-[Implementing software is tracked on the Wiki](https://github.com/mapbox/mbtiles-spec/wiki/Implementations).
+# [Implementations](https://github.com/mapbox/mbtiles-spec/wiki/Implementations).
 
 # License
 
