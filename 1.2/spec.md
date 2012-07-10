@@ -52,6 +52,8 @@ One row in `metadata` is **suggested** and, if provided, may enhance performance
   area covered by all zoom levels. The bounds are represented in `WGS:84` -
   latitude and longitude values, in the OpenLayers Bounds format -
   **left, bottom, right, top**. Example of the full earth: `-180.0,-85,180,85`.
+* `attribution`: An attribution string, which explains in English (and HTML) the sources of
+  data and/or style for the map.
 
 Several additional keys are supported for tilesets that implement
 [UTFGrid-based interaction](https://github.com/mapbox/utfgrid-spec).
