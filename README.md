@@ -1,7 +1,7 @@
-# MBTiles Specification for PostgreSQL/PostGIS
+# MBTiles Specification for PostgreSQL
 
 MBTiles-pg is a possible specification for storing tiled map data in
-[PostgreSQL] databases for immediate usage and for transfer.
+PostgreSQL databases for immediate usage and for transfer.
 MBTiles images, known as **tilesets**, must implement the specification below
 to ensure compatibility with devices.
 
@@ -25,8 +25,6 @@ One MBTiles file represents a single tileset, optionally including grids
 of interactivity data. Multiple tilesets - layers, or maps in other terms,
 can be represented by multiple MBTiles files.
 
-# [Implementations](https://github.com/mapbox/mbtiles-spec/wiki/Implementations).
-
 # License
 
 The text of this specification is licensed under a
@@ -34,7 +32,7 @@ The text of this specification is licensed under a
 However, the use of this spec in products and code is entirely free:
 there are no royalties, restrictions, or requirements.
 
-# Based on work by the following authors
+# Based on [mbtiles-spec](https://github.com/mapbox/mbtiles-spec) by the following authors
 
 * Tom MacWright (tmcw)
 * Will White (willwhite)
