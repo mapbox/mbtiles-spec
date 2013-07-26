@@ -32,7 +32,7 @@ The text of this specification is licensed under a
 However, the use of this spec in products and code is entirely free:
 there are no royalties, restrictions, or requirements.
 
-# Based on [mbtiles-spec](https://github.com/mapbox/mbtiles-spec) by the following authors
+## Based on [mbtiles-spec](https://github.com/mapbox/mbtiles-spec) by the following authors
 
 * Tom MacWright (tmcw)
 * Will White (willwhite)
