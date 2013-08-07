@@ -98,7 +98,7 @@ The database can have optional tables named `grids`, `grid_data`.
 The `grids` table must yield four columns named `zoom_level`, `tile_column`,
 `tile_row`, and `grid`. A typical create statement for the `grids` table:
 
-    CREATE TABLE grid (zoom_level integer, tile_column integer, tile_row integer, grid blob);
+    CREATE TABLE grids (zoom_level integer, tile_column integer, tile_row integer, grid blob);
 
 The `grid_data` table must yield five columns named `zoom_level`, `tile_column`,
 `tile_row`, `key_name`, and `key_json`. A typical create statement for the `grid_data` table:
@@ -107,7 +107,7 @@ The `grid_data` table must yield five columns named `zoom_level`, `tile_column`,
 
 #### Content
 
-The `grid` table contains UTFGrid data, gzip deflated.
+The `grids` table contains UTFGrid data, gzip deflated.
 
 The `grid_data` table contains grid key to value mappings, with values encoded
 as JSON objects.
