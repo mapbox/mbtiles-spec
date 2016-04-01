@@ -110,7 +110,7 @@ The `grid_data` table must yield five columns named `zoom_level`, `tile_column`,
 
 #### Content
 
-The `grids` table contains UTFGrid data, gzip deflated.
+The `grids` table contains UTFGrid data, gzip compressed.
 
 The `grid_data` table contains grid key to value mappings, with values encoded
 as JSON objects.
