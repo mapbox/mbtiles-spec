@@ -18,6 +18,9 @@ Tilesets are expected to be valid SQLite databases of
 [version 3.0.0](http://sqlite.org/formatchng.html) or higher.
 Only core SQLite features are permitted; tilesets **cannot require extensions**.
 
+MBTiles databases can optionally use [the officially assigned magic number](http://www.sqlite.org/src/artifact?ci=trunk&filename=magic.txt)
+to be easily identified as MBTiles.
+
 ## Database
 
 Note: the schemas outlined are meant to be followed as interfaces.
