@@ -16,16 +16,19 @@ for compliance.
 
 # Versions
 
-* **Development** - NOT USABLE: [1.2](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md)
-* **Stable**: [1.1](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/spec.md)
+* **Stable**: [1.3](https://github.com/mapbox/mbtiles-spec/blob/master/1.3/spec.md)
+* NOT USABLE: [1.2](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md)
+* [1.1](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/spec.md)
 * [1.0](https://github.com/mapbox/mbtiles-spec/blob/master/1.0/spec.md)
 
 # Changelog
 
 ## Roadmap
 
-* The format will switch tile ordering to the XYZ schema popularized by
-  OpenStreetMap and away from the Tile Map Service specification.
+## 1.3
+
+* Information added about vector tiles
+* Metadata revised to reflect de facto usage
 
 ## 1.1
 
@@ -51,7 +54,8 @@ for presentational data, like rendered map tiles.
 
 One MBTiles file represents a single tileset, optionally including grids
 of interactivity data. Multiple tilesets - layers, or maps in other terms,
-can be represented by multiple MBTiles files.
+can be represented by multiple MBTiles files. (But vector tiles within a single
+MBTiles file can contain multiple layers.)
 
 # [Implementations](https://github.com/mapbox/mbtiles-spec/wiki/Implementations).
 
@@ -68,3 +72,4 @@ there are no royalties, restrictions, or requirements.
 * Will White (willwhite)
 * Konstantin Kaefer (kkaefer)
 * Justin Miller (incanus)
+* Eric Fischer (ericfischer)
