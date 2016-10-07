@@ -177,4 +177,38 @@ have the following metadata table:
 * `type`: `overlay`
 * `version`: `2`
 * `scheme`: `tms`
-* `json`: `{"vector_layers": [ { "id": "tl_2016_us_county", "description": "Census counties", "minzoom": 0, "maxzoom": 5, "fields": {"ALAND": "Number", "AWATER": "Number", "COUNTYFP": "String", "GEOID": "String", "MTFCC": "String", "NAME": "String", "NAMELSAD": "String", "STATEFP": "String"} }, { "id": "tl_2016_us_primaryroads", "description": "Census primary roads", "minzoom": 0, "maxzoom": 5, "fields": {"FULLNAME": "String", "LINEARID": "String", "MTFCC": "String", "RTTYP": "String"} } ] }`
+* `json`:
+```
+    {
+        "vector_layers": [
+            {
+                "id": "tl_2016_us_county",
+                "description": "Census counties",
+                "minzoom": 0,
+                "maxzoom": 5,
+                "fields": {
+                    "ALAND": "Number",
+                    "AWATER": "Number",
+                    "COUNTYFP": "String",
+                    "GEOID": "String",
+                    "MTFCC": "String",
+                    "NAME": "String",
+                    "NAMELSAD": "String",
+                    "STATEFP": "String"
+                }
+            },
+            {
+                "id": "tl_2016_us_primaryroads",
+                "description": "Census primary roads",
+                "minzoom": 0,
+                "maxzoom": 5,
+                "fields": {
+                    "FULLNAME": "String",
+                    "LINEARID": "String",
+                    "MTFCC": "String",
+                    "RTTYP": "String"
+                }
+            }
+        ]
+    }
+```
