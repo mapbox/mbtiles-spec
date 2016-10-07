@@ -1,7 +1,7 @@
 # MBTiles Specification
 
 MBTiles is a specification for storing tiled map data in
-[SQLite](http://sqlite.org/) databases for immediate usage and for transfer.
+[SQLite](http://sqlite.org/) databases for immediate usage and for efficient transfer.
 MBTiles files, known as **tilesets**, must implement the specification below
 to ensure compatibility with devices.
 
@@ -27,8 +27,8 @@ for compliance.
 
 ## 1.3
 
-* Information added about vector tiles
-* Metadata revised to reflect de facto usage
+* Information added about vector tiles.
+* Metadata revised to reflect de facto usage.
 
 ## 1.1
 
@@ -54,8 +54,8 @@ for presentational data, like rendered map tiles.
 
 One MBTiles file represents a single tileset, optionally including grids
 of interactivity data. Multiple tilesets - layers, or maps in other terms,
-can be represented by multiple MBTiles files. (But vector tiles within a single
-MBTiles file can contain multiple layers.)
+can be represented by multiple MBTiles files. Vector tiles within a single
+MBTiles file can contain multiple layers.
 
 # [Implementations](https://github.com/mapbox/mbtiles-spec/wiki/Implementations).
 

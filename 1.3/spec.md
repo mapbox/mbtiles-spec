@@ -74,7 +74,7 @@ Other optional rows encode more information about the tileset:
 One other row is **required** if the `format` is `pbf` or `mvt`:
 
 * `json`: Lists the layers that appear in the vector tiles and the names and types of
-  the attributes of features that appear in those layers. See below for more detail.
+  the attributes of features that appear in those layers. See [below](#vector-tileset-metadata) for more detail.
 
 Several additional keys are supported for tilesets that implement
 [UTFGrid-based interaction](https://github.com/mapbox/utfgrid-spec).
@@ -163,7 +163,7 @@ The layer object may also contain these keys:
 
 ### Example
 
-A vector tileset that contains United States counties and primary roads from TIGER might
+A vector tileset that contains United States counties and primary roads from [TIGER](https://www.census.gov/geo/maps-data/data/tiger-line.html) might
 have the following metadata table:
 
 * `name`: `TIGER 2016`
