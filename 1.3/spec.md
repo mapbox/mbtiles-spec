@@ -43,12 +43,19 @@ It is common to create an index for this table:
 The metadata table is used as a key/value store for settings. Two keys are **required**:
 
 * `name`: The plain-English name of the tileset.
-* `format`: The file format of the tile data: `png`, `jpg`, `pbf`, or `mvt`.
+* `format`: The file format of the tile data.
 
-`pbf` and `mvt` both refer to zlib-deflated vector tile data in
-[Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) format.
-Historically, vector tilesets have been written with `pbf` as the `format`,
-but version 2 and beyond of the Mapbox Vector Tile spec prefer `mvt`.
+For new tilesets, the `format` should be a MIME type: for example,
+`image/png` or `image/jpeg` for PNG or JPEG image data, or
+`application/vnd.mapbox-vector-tile` for
+[Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) data.
+
+Previous versions of the MBTiles spec called for PNG and JPEG data
+to be tagged with a `format` of `png` or `jpg`, so these may be found
+in existing tilesets and should be treated as synonyms for
+`image/png` and `image/jpeg`. Many existing Mapbox Vector Tile tilesets
+are tagged with a `format` of `pbf`, which should be treated as
+a synonym for `application/vnd.mapbox-vector-tile`.
 
 Four rows in `metadata` are **suggested** and, if provided, may enhance performance:
 
@@ -103,7 +110,7 @@ their construction, but in a restricted form:
 
 **The [global-mercator](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator) (aka Spherical Mercator) profile is assumed**
 
-Note that the Y axis is reversed from the coordinate system commonly used in the URLs
+Note that in the TMS tiling scheme, the Y axis is reversed from the coordinate system commonly used in the URLs
 to request individual tiles, so the tile commonly referred to as 11/327/791 is inserted as
 `zoom_level` 11, `tile_column` 327, and `tile_row` 1256, since 1256 is 2^11 - 1 - 791.
 
@@ -149,12 +156,13 @@ As mentioned above, Mapbox Vector Tile tilesets must include a `json` row in the
 to summarize what layers are available in the tiles and what attributes are available for the
 features in those layers.
 
-The row contains a single JSON object with a `vector_layers` key, whose value is an array of layers.
+The row contains the string representation of a JSON object with a `vector_layers` key, whose value is an array of layers.
 Each layer is a JSON object with the following keys:
 
 * `id`: The layer ID, used for a [CartoCSS selector](https://tilemill-project.github.io/tilemill/docs/guides/selectors/) or [Mapbox GL Style layer](https://www.mapbox.com/mapbox-gl-style-spec/#layers).
 * `description`: A human-readable description of the layer's contents (or empty string if not available).
-* `fields`: A JSON object whose keys and values are the names and types of attributes available in this layer. The type should be `Number`, `Boolean`, or `String`.
+* `fields`: A JSON object whose keys and values are the names and types of attributes available in this layer.
+The type should be the string `"Number"`, `"Boolean"`, or `"String"`.
 
 The layer object may also contain these keys:
 
