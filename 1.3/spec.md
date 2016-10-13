@@ -34,21 +34,12 @@ This table must yield exactly two columns named `name` and
 
     CREATE TABLE metadata (name text, value text);
 
-It is common to create an index for this table:
-
-    CREATE UNIQUE INDEX name on metadata (name);
-
 #### Content
 
 The metadata table is used as a key/value store for settings. Two keys are **required**:
 
 * `name`: The plain-English name of the tileset.
-* `format`: The file format of the tile data.
-
-For new tilesets, the `format` should be a MIME type: for example,
-`image/png` or `image/jpeg` for PNG or JPEG image data, or
-`application/vnd.mapbox-vector-tile` for
-[Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) data.
+* `format`: The file format of the tile data, as a MIME type.
 
 Previous versions of the MBTiles spec called for PNG and JPEG data
 to be tagged with a `format` of `png` or `jpg`, so these may be found
@@ -57,7 +48,7 @@ in existing tilesets and should be treated as synonyms for
 are tagged with a `format` of `pbf`, which should be treated as
 a synonym for `application/vnd.mapbox-vector-tile`.
 
-Four rows in `metadata` are **suggested** and, if provided, may enhance performance:
+Four rows in `metadata` are **suggested**:
 
 * `bounds`: The maximum extent of the rendered map area. Bounds must define an
   area covered by all zoom levels. The bounds are represented in `WGS:84` -
@@ -76,9 +67,8 @@ Other optional rows encode more information about the tileset:
 * `type`: `overlay` or `baselayer`
 * `version`: The version of the tileset, as a plain number.
   This refers to a revision of the tileset itself, not of the MBTiles specification.
-* `scheme`: `tms`, to make the tiling scheme explicit
 
-One other row is **required** if the `format` is `pbf` or `mvt`:
+One other row is **required** if the `format` is `application/vnd.mapbox-vector-tile` (`pbf`):
 
 * `json`: Lists the layers that appear in the vector tiles and the names and types of
   the attributes of features that appear in those layers. See [below](#vector-tileset-metadata) for more detail.
@@ -116,13 +106,6 @@ to request individual tiles, so the tile commonly referred to as 11/327/791 is i
 
 The `tile_data blob` column contains raw image or vector tile data in binary.
 
-A subset of file formats are permitted:
-
-* `png`
-* `jpg`
-* `pbf`
-* `mvt`
-
 ### Grids
 
 _See the [UTFGrid specification](https://github.com/mapbox/utfgrid-spec) for
@@ -159,7 +142,7 @@ features in those layers.
 The row contains the string representation of a JSON object with a `vector_layers` key, whose value is an array of layers.
 Each layer is a JSON object with the following keys:
 
-* `id`: The layer ID, used for a [CartoCSS selector](https://tilemill-project.github.io/tilemill/docs/guides/selectors/) or [Mapbox GL Style layer](https://www.mapbox.com/mapbox-gl-style-spec/#layers).
+* `id`: The layer ID, which is referred to as the `name` of the layer in the [Mapbox Vector Tile spec](https://github.com/mapbox/vector-tile-spec/tree/master/2.1#41-layers).
 * `description`: A human-readable description of the layer's contents (or empty string if not available).
 * `fields`: A JSON object whose keys and values are the names and types of attributes available in this layer.
 The type should be the string `"Number"`, `"Boolean"`, or `"String"`.
@@ -169,13 +152,19 @@ The layer object may also contain these keys:
 * `minzoom`: The lowest zoom level whose tiles this layer appears in.
 * `maxzoom`: The highest zoom level whose tiles this layer appears in.
 
+The `minzoom` should be greater than or equal to the tileset's `minzoom`,
+and the `maxzoom` should be less than or equal to the tileset's `maxzoom`.
+These keys are used to describe the situation where different sets of vector layers
+appear in different zoom levels of the same tileset, for example in a case where
+a "minor roads" layer is only present at high zoom levels.
+
 ### Example
 
 A vector tileset that contains United States counties and primary roads from [TIGER](https://www.census.gov/geo/maps-data/data/tiger-line.html) might
 have the following metadata table:
 
 * `name`: `TIGER 2016`
-* `format`: `mvt`
+* `format`: `application/vnd.mapbox-vector-tile`
 * `bounds`: `-179.231086,-14.601813,179.859681,71.441059`
 * `center`: `-84.375000,36.466030,5`
 * `minzoom`: `0`
@@ -184,7 +173,6 @@ have the following metadata table:
 * `description`: `US Census counties and primary roads`
 * `type`: `overlay`
 * `version`: `2`
-* `scheme`: `tms`
 * `json`:
 ```
     {
