@@ -143,9 +143,12 @@ The row contains the string representation of a JSON object with a `vector_layer
 Each layer is a JSON object with the following keys:
 
 * `id`: The layer ID, which is referred to as the `name` of the layer in the [Mapbox Vector Tile spec](https://github.com/mapbox/vector-tile-spec/tree/master/2.1#41-layers).
-* `description`: A human-readable description of the layer's contents (or empty string if not available).
 * `fields`: A JSON object whose keys and values are the names and types of attributes available in this layer.
 The type should be the string `"Number"`, `"Boolean"`, or `"String"`.
+
+It may also contain the following key:
+
+* `description`: A human-readable description of the layer's contents.
 
 The layer object may also contain these keys:
 
