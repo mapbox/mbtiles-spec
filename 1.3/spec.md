@@ -39,7 +39,7 @@ This table must yield exactly two columns named `name` and
 The metadata table is used as a key/value store for settings. Two keys are **required**:
 
 * `name`: The plain-English name of the tileset.
-* `format`: The file format of the tile data: `pbf`, `jpg`, or `png`.
+* `format`: The file format of the tile data: `pbf`, `jpg`, `png`, or a MIME type for other formats.
 
 `pbf` refers to zlib-deflated vector tile data in
 [Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) format.
