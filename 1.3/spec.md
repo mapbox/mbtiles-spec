@@ -39,14 +39,10 @@ This table must yield exactly two columns named `name` and
 The metadata table is used as a key/value store for settings. Two keys are **required**:
 
 * `name`: The plain-English name of the tileset.
-* `format`: The file format of the tile data, as a MIME type.
+* `format`: The file format of the tile data: `pbf`, `jpg`, or `png`.
 
-Previous versions of the MBTiles spec called for PNG and JPEG data
-to be tagged with a `format` of `png` or `jpg`, so these may be found
-in existing tilesets and should be treated as synonyms for
-`image/png` and `image/jpeg`. Many existing Mapbox Vector Tile tilesets
-are tagged with a `format` of `pbf`, which should be treated as
-a synonym for `application/vnd.mapbox-vector-tile`.
+`pbf` refers to zlib-deflated vector tile data in
+[Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) format.
 
 Four rows in `metadata` are **suggested**:
 
@@ -68,7 +64,7 @@ Other optional rows encode more information about the tileset:
 * `version`: The version of the tileset, as a plain number.
   This refers to a revision of the tileset itself, not of the MBTiles specification.
 
-One other row is **required** if the `format` is `application/vnd.mapbox-vector-tile` (`pbf`):
+One other row is **required** if the `format` is `pbf`:
 
 * `json`: Lists the layers that appear in the vector tiles and the names and types of
   the attributes of features that appear in those layers. See [below](#vector-tileset-metadata) for more detail.
@@ -167,7 +163,7 @@ A vector tileset that contains United States counties and primary roads from [TI
 have the following metadata table:
 
 * `name`: `TIGER 2016`
-* `format`: `application/vnd.mapbox-vector-tile`
+* `format`: `pbf`
 * `bounds`: `-179.231086,-14.601813,179.859681,71.441059`
 * `center`: `-84.375000,36.466030,5`
 * `minzoom`: `0`
