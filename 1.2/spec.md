@@ -47,7 +47,7 @@ The metadata table is used as a key/value store for settings. Five keys are **re
 * `type`: `overlay` or `baselayer`
 * `version`: The version of the tileset, as a plain number.
 * `description`: A description of the layer as plain text.
-* `format`: The image file format of the tile data: `png` or `jpg`
+* `format`: The image file format of the tile data: `png`, `jpg`, or `mixed`
 
 One row in `metadata` is **suggested** and, if provided, may enhance performance.
 
