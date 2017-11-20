@@ -135,7 +135,11 @@ As mentioned above, Mapbox Vector Tile tilesets must include a `json` row in the
 to summarize what layers are available in the tiles and what attributes are available for the
 features in those layers.
 
-The row contains the string representation of a JSON object with a `vector_layers` key, whose value is an array of layers.
+### Vector_layers
+
+The `json` row contains the string representation of a JSON object.
+
+The object must contain a `vector_layers` key, whose value is an array of layers.
 Each layer is a JSON object with the following keys:
 
 * `id`: The layer ID, which is referred to as the `name` of the layer in the [Mapbox Vector Tile spec](https://github.com/mapbox/vector-tile-spec/tree/master/2.1#41-layers).
@@ -156,6 +160,14 @@ and the `maxzoom` should be less than or equal to the tileset's `maxzoom`.
 These keys are used to describe the situation where different sets of vector layers
 appear in different zoom levels of the same tileset, for example in a case where
 a "minor roads" layer is only present at high zoom levels.
+
+### Tilestats
+
+The `json` row may also contain a `tilestats` key, whose value is an object in the "geostats"
+format documented in the [mapbox-geostats](https://github.com/mapbox/mapbox-geostats#output-the-stats)
+repository. Like the `vector_layers`, it lists the tileset's layers and the attributes found
+within each layer, but also gives sample values for each attribute and the range of values for
+numeric attributes.
 
 ### Example
 
@@ -184,12 +196,9 @@ have the following metadata table:
                 "fields": {
                     "ALAND": "Number",
                     "AWATER": "Number",
-                    "COUNTYFP": "String",
                     "GEOID": "String",
                     "MTFCC": "String",
-                    "NAME": "String",
-                    "NAMELSAD": "String",
-                    "STATEFP": "String"
+                    "NAME": "String"
                 }
             },
             {
@@ -204,6 +213,139 @@ have the following metadata table:
                     "RTTYP": "String"
                 }
             }
-        ]
+        ],
+        "tilestats": {
+            "layerCount": 2,
+            "layers": [
+                {
+                    "layer": "tl_2016_us_county",
+                    "count": 3233,
+                    "geometry": "Polygon",
+                    "attributeCount": 5,
+                    "attributes": [
+                        {
+                            "attribute": "ALAND",
+                            "count": 6,
+                            "type": "number",
+                            "values": [
+                                1000508839,
+                                1001065264,
+                                1001787870,
+                                1002071716,
+                                1002509543,
+                                1003451714
+                            ],
+                            "min": 82093,
+                            "max": 376825063576
+                        },
+                        {
+                            "attribute": "AWATER",
+                            "count": 6,
+                            "type": "number",
+                            "values": [
+                                0,
+                                100091246,
+                                10017651,
+                                100334057,
+                                10040117,
+                                1004128585
+                            ],
+                            "min": 0,
+                            "max": 25190628850
+                        },
+                        {
+                            "attribute": "GEOID",
+                            "count": 6,
+                            "type": "string",
+                            "values": [
+                                "01001",
+                                "01003",
+                                "01005",
+                                "01007",
+                                "01009",
+                                "01011"
+                            ]
+                        },
+                        {
+                            "attribute": "MTFCC",
+                            "count": 1,
+                            "type": "string",
+                            "values": [
+                                "G4020"
+                            ]
+                        },
+                        {
+                            "attribute": "NAME",
+                            "count": 6,
+                            "type": "string",
+                            "values": [
+                                "Abbeville",
+                                "Acadia",
+                                "Accomack",
+                                "Ada",
+                                "Adair",
+                                "Adams"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "layer": "tl_2016_us_primaryroads",
+                    "count": 12509,
+                    "geometry": "LineString",
+                    "attributeCount": 4,
+                    "attributes": [
+                        {
+                            "attribute": "FULLNAME",
+                            "count": 6,
+                            "type": "string",
+                            "values": [
+                                "1- 80",
+                                "10",
+                                "10-Hov Fwy",
+                                "12th St",
+                                "14 Th St",
+                                "17th St NE"
+                            ]
+                        },
+                        {
+                            "attribute": "LINEARID",
+                            "count": 6,
+                            "type": "string",
+                            "values": [
+                                "1101000363000",
+                                "1101000363004",
+                                "1101019172643",
+                                "1101019172644",
+                                "1101019172674",
+                                "1101019172675"
+                            ]
+                        },
+                        {
+                            "attribute": "MTFCC",
+                            "count": 1,
+                            "type": "string",
+                            "values": [
+                                "S1100"
+                            ]
+                        },
+                        {
+                            "attribute": "RTTYP",
+                            "count": 6,
+                            "type": "string",
+                            "values": [
+                                "C",
+                                "I",
+                                "M",
+                                "O",
+                                "S",
+                                "U"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
     }
+
 ```
