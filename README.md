@@ -16,8 +16,8 @@ for compliance.
 
 # Versions
 
-* **Stable**: [1.3](https://github.com/mapbox/mbtiles-spec/blob/master/1.3/spec.md)
-* NOT USABLE: [1.2](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md)
+* **De facto current requirements**: [1.3](https://github.com/mapbox/mbtiles-spec/blob/master/1.3/spec.md)
+* [1.2](https://github.com/mapbox/mbtiles-spec/blob/master/1.2/spec.md)
 * [1.1](https://github.com/mapbox/mbtiles-spec/blob/master/1.1/spec.md)
 * [1.0](https://github.com/mapbox/mbtiles-spec/blob/master/1.0/spec.md)
 
