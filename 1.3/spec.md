@@ -27,13 +27,17 @@ SQLite views that produce compatible results are equally valid.
 For convenience, this specification refers to tables and virtual
 tables (views) as tables.
 
+## Charset
+
+All text in `text` columns of tables in an mbtiles tileset MUST be encoded as UTF-8.
+
 ### Metadata
 
 #### Schema
 
 The database MUST contain a table or view named `metadata`.
 
-This table or view MUST yield exactly two columns named `name` and
+This table or view MUST yield exactly two columns of type `text`, named `name` and
 `value`. A typical create statement for the `metadata` table:
 
     CREATE TABLE metadata (name text, value text);
@@ -42,35 +46,35 @@ This table or view MUST yield exactly two columns named `name` and
 
 The metadata table is used as a key/value store for settings. It MUST contain these two rows:
 
-* `name`: The human-readable name of the tileset.
-* `format`: The file format of the tile data: `pbf`, `jpg`, `png`, or a MIME type for other formats.
+* `name` (string): The human-readable name of the tileset.
+* `format` (string): The file format of the tile data: `pbf`, `jpg`, `png`, or an [IETF media type](https://www.iana.org/assignments/media-types/media-types.xhtml) for other formats.
 
-`pbf` refers to gzip-compressed vector tile data in
+`pbf` here refers to gzip-compressed vector tile data in
 [Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) format.
 
 The `metadata` table SHOULD contain these four rows:
 
-* `bounds`: The maximum extent of the rendered map area. Bounds must define an
+* `bounds` (string of comma-separated numbers): The maximum extent of the rendered map area. Bounds must define an
   area covered by all zoom levels. The bounds are represented in `WGS:84` -
   latitude and longitude values, in the OpenLayers Bounds format -
   **left, bottom, right, top**. Example of the full earth: `-180.0,-85,180,85`.
-* `center`: The longitude, latitude, and zoom level of the default view of the map.
+* `center` (string of comma-separated numbers): The longitude, latitude, and zoom level of the default view of the map.
   Example: `-122.1906,37.7599,11`
-* `minzoom`: The lowest zoom level for which the tileset provides data
-* `maxzoom`: The highest zoom level for which the tileset provides data
+* `minzoom` (number): The lowest zoom level for which the tileset provides data
+* `maxzoom` (number): The highest zoom level for which the tileset provides data
 
 The `metadata` table MAY contain these four rows:
 
-* `attribution`: An attribution string, which explains in English (and HTML) the sources of
+* `attribution` (HTML string): An attribution string, which explains the sources of
   data and/or style for the map.
-* `description`: A description of the tileset's content as plain text.
-* `type`: `overlay` or `baselayer`
-* `version`: The version of the tileset, as a plain number.
+* `description` (string): A description of the tileset's content.
+* `type` (string): `overlay` or `baselayer`
+* `version` (number): The version of the tileset.
   This refers to a revision of the tileset itself, not of the MBTiles specification.
 
 If the `format` is `pbf`, the `metadata` table MUST contain this row:
 
-* `json`: Lists the layers that appear in the vector tiles and the names and types of
+* `json` (stringified JSON object): Lists the layers that appear in the vector tiles and the names and types of
   the attributes of features that appear in those layers. See [below](#vector-tileset-metadata) for more detail.
 
 The `metadata` table MAY contain additional rows for tilesets that implement
@@ -83,8 +87,9 @@ other purposes.
 
 The database MUST contain a table named `tiles`.
 
-The table MUST contain four columns, named `zoom_level`, `tile_column`,
-`tile_row`, and `tile_data`. A typical `create` statement for the `tiles` table:
+The table MUST contain three columns of type `integer`, named `zoom_level`, `tile_column`,
+`tile_row`, and one of type `blob`, named `tile_data`.
+A typical `create` statement for the `tiles` table:
 
     CREATE TABLE tiles (zoom_level integer, tile_column integer, tile_row integer, tile_data blob);
 
@@ -118,13 +123,15 @@ specification is only concerned with storage._
 
 The database MAY have tables named `grids` and `grid_data`.
 
-The `grids` table MUST contain four columns, named `zoom_level`, `tile_column`,
-`tile_row`, and `grid`. A typical create statement for the `grids` table:
+The `grids` table MUST contain three columns of type `integer`, named `zoom_level`, `tile_column`,
+and `tile_row`, and one of type `blob`, named `grid`.
+A typical create statement for the `grids` table:
 
     CREATE TABLE grids (zoom_level integer, tile_column integer, tile_row integer, grid blob);
 
-The `grid_data` table MUST contain five columns named `zoom_level`, `tile_column`,
-`tile_row`, `key_name`, and `key_json`. A typical create statement for the `grid_data` table:
+The `grid_data` table MUST contain three columns of type `integer`, named `zoom_level`, `tile_column`,
+and `tile_row`, and two of type `text`, named `key_name`, and `key_json`.
+A typical create statement for the `grid_data` table:
 
     CREATE TABLE grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text);
 
@@ -141,29 +148,29 @@ As mentioned above, Mapbox Vector Tile tilesets MUST include a `json` row in the
 to summarize what layers are available in the tiles and what attributes are available for the
 features in those layers.
 
+The `json` row, if present, MUST contain the UTF-8 string representation of a JSON object.
+
 ### Vector_layers
 
-The `json` row MUST contain the string representation of a JSON object.
+The JSON object in the `json` row MUST contain a `vector_layers` key, whose value is an array of JSON objects.
+Each of those JSON objects describes one layer of vector tile data, and MUST contain the following key-value pairs:
 
-The object MUST contain a `vector_layers` key, whose value is an array of layers.
-Each layer is a JSON object that MUST contain the following key-value pairs:
-
-* `id`: The layer ID, which is referred to as the `name` of the layer in the [Mapbox Vector Tile spec](https://github.com/mapbox/vector-tile-spec/tree/master/2.1#41-layers).
-* `fields`: A JSON object whose keys and values are the names and types of attributes available in this layer.
-The type MUST be the string `"Number"`, `"Boolean"`, or `"String"`.
+* `id` (string): The layer ID, which is referred to as the `name` of the layer in the [Mapbox Vector Tile spec](https://github.com/mapbox/vector-tile-spec/tree/master/2.1#41-layers).
+* `fields` (object): A JSON object whose keys and values are the names and types of attributes available in this layer.
+Each type MUST be the string `"Number"`, `"Boolean"`, or `"String"`.
 Attributes whose type varies between features SHOULD be listed as `"String"`.
 
 Each layer object MAY also contain the following key-value pair:
 
-* `description`: A human-readable description of the layer's contents.
+* `description` (string): A human-readable description of the layer's contents.
 
 Each layer object MAY also contain the following key-value pair:
 
-* `minzoom`: The lowest zoom level whose tiles this layer appears in.
-* `maxzoom`: The highest zoom level whose tiles this layer appears in.
+* `minzoom` (number): The lowest zoom level whose tiles this layer appears in.
+* `maxzoom` (number): The highest zoom level whose tiles this layer appears in.
 
-The `minzoom` SHOULD be greater than or equal to the tileset's `minzoom`,
-and the `maxzoom` SHOULD be less than or equal to the tileset's `maxzoom`.
+The `minzoom` MUST be greater than or equal to the tileset's `minzoom`,
+and the `maxzoom` MUST be less than or equal to the tileset's `maxzoom`.
 
 These keys are used to describe the situation where different sets of vector layers
 appear in different zoom levels of the same tileset, for example in a case where
@@ -171,7 +178,7 @@ a "minor roads" layer is only present at high zoom levels.
 
 ### Tilestats
 
-The `json` row MAY also contain a `tilestats` key, whose value is an object in the "geostats"
+The JSON object in the `json` row MAY also contain a `tilestats` key, whose value is an object in the "geostats"
 format documented in the [mapbox-geostats](https://github.com/mapbox/mapbox-geostats#output-the-stats)
 repository. Like the `vector_layers`, it lists the tileset's layers and the attributes found
 within each layer, but also gives sample values for each attribute and the range of values for
