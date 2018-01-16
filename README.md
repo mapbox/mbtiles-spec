@@ -56,5 +56,6 @@ there are no royalties, restrictions, or requirements.
 * Konstantin Kaefer (kkaefer)
 * Tom MacWright (tmcw)
 * Justin Miller (incanus)
+* Paul Norman (pnorman)
 * Blake Thompson (flippmoke)
 * Will White (willwhite)
