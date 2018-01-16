@@ -1,5 +1,9 @@
 # MBTiles 1.3
 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in
+this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+
 ## Abstract
 
 MBTiles is a specification for storing tiled map data in
@@ -11,9 +15,9 @@ to ensure compatibility with devices.
 
 Tilesets MUST be valid SQLite databases of
 [version 3.0.0](http://sqlite.org/formatchng.html) or higher.
-Only core SQLite features are permitted; tilesets MAY NOT require extensions.
+Only core SQLite features are permitted; tilesets MUST NOT require extensions.
 
-MBTiles databases MAY optionally use [the officially assigned magic number](http://www.sqlite.org/src/artifact?ci=trunk&filename=magic.txt)
+MBTiles databases SHOULD use [the officially assigned magic number](http://www.sqlite.org/src/artifact?ci=trunk&filename=magic.txt)
 to be easily identified as MBTiles.
 
 ## Database
@@ -29,7 +33,7 @@ tables (views) as tables.
 
 The database MUST contain a table or view named `metadata`.
 
-This table MUST yield exactly two columns named `name` and
+This table or view MUST yield exactly two columns named `name` and
 `value`. A typical create statement for the `metadata` table:
 
     CREATE TABLE metadata (name text, value text);
