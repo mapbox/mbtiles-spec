@@ -110,8 +110,8 @@ Note that in the TMS tiling scheme, the Y axis is reversed from the coordinate s
 to request individual tiles, so the tile commonly referred to as 11/327/791 is inserted as
 `zoom_level` 11, `tile_column` 327, and `tile_row` 1256, since 1256 is 2^11 - 1 - 791.
 
-The `tile_data blob` column MUST contain the raw binary image or vector tile data
-for the associated tile.
+The `tile_data` column MUST contain the raw binary image or vector tile data
+for the associated tile as a `blob`.
 
 ### Grids
 
