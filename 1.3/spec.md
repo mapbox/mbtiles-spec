@@ -61,7 +61,7 @@ This table or view MUST yield exactly two columns of type `text`, named `name` a
 The metadata table is used as a key/value store for settings. It MUST contain these two rows:
 
 * `name` (string): The human-readable name of the tileset.
-* `format` (string): The file format of the tile data: `pbf`, `jpg`, `png`, or an [IETF media type](https://www.iana.org/assignments/media-types/media-types.xhtml) for other formats.
+* `format` (string): The file format of the tile data: `pbf`, `jpg`, `png`, `webp`, or an [IETF media type](https://www.iana.org/assignments/media-types/media-types.xhtml) for other formats.
 
 `pbf` as a `format` refers to gzip-compressed vector tile data in
 [Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) format.
