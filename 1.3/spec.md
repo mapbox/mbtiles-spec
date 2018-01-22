@@ -11,19 +11,33 @@ MBTiles is a specification for storing tiled map data in
 MBTiles files, known as **tilesets**, MUST implement the specification below
 to ensure compatibility with devices.
 
+## Compatibility
+
+*This section is informative and does not add requirements to implementations.*
+
+Because views may be used to produce the MBTiles schema, two implementations
+may store tiles with different internal details, meaning one implementation
+may not be able to add to an existing file.
+
+As a container format, MBTiles can store any tiled data, so data can be stored
+that an implementation cannot do anything with.
+
+Relying on metadata keys not defined in the specification can cause
+compatibility problems.
+
 ## Database Specifications
 
-Tilesets MUST be valid SQLite databases of
+Tilesets SHALL be valid SQLite databases of
 [version 3.0.0](http://sqlite.org/formatchng.html) or higher.
-Only core SQLite features are permitted; tilesets MUST NOT require extensions.
+Only core SQLite features are permitted; tilesets SHALL NOT require extensions.
 
-MBTiles databases SHOULD use [the officially assigned magic number](http://www.sqlite.org/src/artifact?ci=trunk&filename=magic.txt)
+MBTiles databases MAY use [the officially assigned magic number](http://www.sqlite.org/src/artifact?ci=trunk&filename=magic.txt)
 to be easily identified as MBTiles.
 
 ## Database
 
 Note: the schemas outlined are meant to be followed as interfaces.
-SQLite views that produce compatible results are equally valid.
+SQLite views that produce compatible results MAY be used instead.
 For convenience, this specification refers to tables and virtual
 tables (views) as tables.
 
@@ -49,7 +63,7 @@ The metadata table is used as a key/value store for settings. It MUST contain th
 * `name` (string): The human-readable name of the tileset.
 * `format` (string): The file format of the tile data: `pbf`, `jpg`, `png`, or an [IETF media type](https://www.iana.org/assignments/media-types/media-types.xhtml) for other formats.
 
-`pbf` here refers to gzip-compressed vector tile data in
+`pbf` as a `format` refers to gzip-compressed vector tile data in
 [Mapbox Vector Tile](https://github.com/mapbox/vector-tile-spec/) format.
 
 The `metadata` table SHOULD contain these four rows:
@@ -104,9 +118,9 @@ The `zoom_level`, `tile_column`, and `tile_row` columns MUST encode the location
 of the tile, following the
 [Tile Map Service Specification](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification),
 with the restriction that
-**the [global-mercator](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator) (aka Spherical Mercator) profile is assumed**.
+the [global-mercator](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator) (aka Spherical Mercator) profile MUST be used.
 
-Note that in the TMS tiling scheme, the Y axis is reversed from the coordinate system commonly used in the URLs
+Note that in the TMS tiling scheme, the Y axis is reversed from the "XYZ" coordinate system commonly used in the URLs
 to request individual tiles, so the tile commonly referred to as 11/327/791 is inserted as
 `zoom_level` 11, `tile_column` 327, and `tile_row` 1256, since 1256 is 2^11 - 1 - 791.
 
@@ -137,9 +151,9 @@ A typical create statement for the `grid_data` table:
 
 #### Content
 
-The `grids` table contains UTFGrid data, compressed in `gzip` format.
+The `grids` table, if present, MUST contain UTFGrid data, compressed in `gzip` format.
 
-The `grid_data` table contains grid key to value mappings, with values encoded
+The `grid_data` table, if present, MUST contain grid key to value mappings, with values encoded
 as JSON objects.
 
 ## Vector tileset metadata
