@@ -69,9 +69,10 @@ The metadata table is used as a key/value store for settings. It MUST contain th
 The `metadata` table SHOULD contain these four rows:
 
 * `bounds` (string of comma-separated numbers): The maximum extent of the rendered map area. Bounds must define an
-  area covered by all zoom levels. The bounds are represented in `WGS:84` -
-  latitude and longitude values, in the OpenLayers Bounds format -
-  **left, bottom, right, top**. Example of the full earth: `-180.0,-85,180,85`.
+  area covered by all zoom levels. The bounds are represented as `WGS 84`
+  latitude and longitude values, in the OpenLayers Bounds format
+  (left, bottom, right, top). For example, the `bounds` of the full Earth, minus the poles, would be:
+  `-180.0,-85,180,85`.
 * `center` (string of comma-separated numbers): The longitude, latitude, and zoom level of the default view of the map.
   Example: `-122.1906,37.7599,11`
 * `minzoom` (number): The lowest zoom level for which the tileset provides data
