@@ -379,3 +379,15 @@ have the following metadata table:
     }
 
 ```
+
+## Future directions
+
+In a future revision of this specification, the `metadata` table
+will contain a `compression` row to indicate the type of compression
+(if any) that has been applied to tile data.
+
+In a future revision of this specification, the `bounds`, `minzoom`,
+and `maxzoom` rows of the `metadata` table will be mandatory.
+
+A future revision of this specification will delegate the description
+of the `json` row of the `metadata` table to an external specification.
