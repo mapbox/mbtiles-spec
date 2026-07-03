@@ -121,7 +121,7 @@ of the tile, following the
 with the restriction that
 the [global-mercator](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-mercator) (aka Spherical Mercator) profile MUST be used.
 
-Note that in the TMS tiling scheme, the Y axis is reversed from the "XYZ" coordinate system commonly used in the URLs
+Note that in the TMS tiling scheme, the Y axis is reversed from the "ZXY" coordinate system commonly used in the URLs
 to request individual tiles, so the tile commonly referred to as 11/327/791 is inserted as
 `zoom_level` 11, `tile_column` 327, and `tile_row` 1256, since 1256 is 2^11 - 1 - 791.
 
