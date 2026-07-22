@@ -78,7 +78,7 @@ The `metadata` table SHOULD contain these four rows:
 * `minzoom` (number): The lowest zoom level for which the tileset provides data
 * `maxzoom` (number): The highest zoom level for which the tileset provides data
 
-The `metadata` table MAY contain these four rows:
+The `metadata` table MAY contain these five rows:
 
 * `attribution` (HTML string): An attribution string, which explains the sources of
   data and/or style for the map.
@@ -86,6 +86,8 @@ The `metadata` table MAY contain these four rows:
 * `type` (string): `overlay` or `baselayer`
 * `version` (number): The version of the tileset.
   This refers to a revision of the tileset itself, not of the MBTiles specification.
+* `tilepixelratio` (floating-point number): The pixel ratio of the tileset.
+  If not specified, `1.0` is assumed. For @2x HiDPI tiles use `2.0`.
 
 If the `format` is `pbf`, the `metadata` table MUST contain this row:
 
